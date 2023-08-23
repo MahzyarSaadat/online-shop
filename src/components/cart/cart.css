@@ -1,0 +1,13 @@
+.h-65{
+    height: 18rem;
+}
+
+.right-4{
+    right: -16px ;
+}
+
+.card-textContent{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
