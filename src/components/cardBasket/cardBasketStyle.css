@@ -1,0 +1,21 @@
+.bakset-container{
+    min-height: 100vh;
+}
+
+.min-height-75{
+    min-height: 75vh;
+}
+
+.min-height-25{
+    min-height: 25vh;
+}
+
+.fs-7{
+    font-size: .75rem;
+}
+
+.card-textContent{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}

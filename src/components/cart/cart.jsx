@@ -16,7 +16,7 @@ const Cart = (props) => {
                 <FaStore/>
                 <span>{props.productCategory}</span>
             </p>
-            <p className="d-flex align-items-center">
+            <div className="d-flex align-items-center">
                 <FaStar/>
                 <h5>{props.productRate}</h5>
                 <span>
@@ -25,11 +25,19 @@ const Cart = (props) => {
                     نظر
                     )
                 </span>
-            </p>
+            </div>
 
             <div className="d-flex justify-content-between">
                 <div>
-                    <Button variant="outline-danger">+</Button>
+                    <Button variant="outline-danger"
+                        onClick={() => props.setBasketList([...props.basketList , 
+                            {
+                                productName: props.productName,
+                                productPrice: props.productPrice,
+                                productId : props.productId
+                            }
+                    ])}
+                    >+</Button>
                 </div>
                 <div className="d-flex align-items-center gap-1">
                     <h3 className="fs-5">
